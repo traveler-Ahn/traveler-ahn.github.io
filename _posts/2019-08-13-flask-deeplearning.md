@@ -70,18 +70,13 @@ $ source flask/bin/activate
 (flask) ~/flask_deeplearning$ git clone https://github.com/traveler-Ahn/flask_deeplearning.git
 ```
 
-- 폴더 구조
-<img src="https://github.com/traveler-Ahn/traveler-ahn.github.io/blob/master/assets/img/190814_folder_structure.png">
-
-![ex_screenshot](../assets/img/190814_folder_structure.png)
-
 #### 모델 파일 추가하기
 
 - 해당 [경로](https://drive.google.com/drive/folders/1vBnoOsVKDmy55-6Ky9CtEwrr3SYkD7pJ)에서 모델 파일을 다운받아서 models폴더 안에 넣어준다.
 
 ### 4. 실행!
 
-![ex_screenshot](../assets/img/190814_flask_deeplearning.png)
+- [깃허브 연결](https://github.com/traveler-Ahn/flask_deeplearning)
 
 
 
