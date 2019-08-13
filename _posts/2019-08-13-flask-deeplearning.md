@@ -71,6 +71,7 @@ $ source flask/bin/activate
 ```
 
 - 폴더 구조
+<img src="https://github.com/traveler-Ahn/traveler-ahn.github.io/blob/master/assets/img/190814_folder_structure.png">
 
 ![ex_screenshot](../assets/img/190814_folder_structure.png)
 
