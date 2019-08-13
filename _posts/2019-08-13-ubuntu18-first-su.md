@@ -11,6 +11,8 @@ comments: true
 - 오늘 3시간 가량 우분투를 포멧하고 다시 설치하면서 삽질했던 기록들을 남깁니다.
 - 앞으로 계속 업데이트 될 페이지 입니다. (190813)
 
+
+
 ---
 
 # Ubuntu 18.04 내 컴퓨터 초기 s/u (190813)
@@ -238,6 +240,14 @@ $ sudo gem install jekyll bundler
 ~/test.github.io$ bundle exec jekyll serve
 
 # 이제 브라우저로 http://localhost:4000에 접속하여 확인한다.
+```
+
+### 15. tree 설치
+
+- 폴더 구조 파악하기 편하다.
+
+```
+$ sudo apt install tree
 ```
 
 ---
