@@ -87,7 +87,7 @@
 {% endif %}
 
 <link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | absolute_url }}">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">-->
 <!-- Place favicon.ico in the root directory -->
 
 <!-- =============== -->
@@ -99,14 +99,6 @@
   {% include scripts/cssrelpreload.min.js %}
   window.disablePushState = {{ site.disable_push_state | default:false}};
   window.disableDrawer = {{ site.disable_drawer | default:false}};
-</script>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5105555504153863",
-    enable_page_level_ads: true
-  });
 </script>
 
 <!--[if lt IE 9]>

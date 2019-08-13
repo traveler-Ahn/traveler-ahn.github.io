@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               여행자님의  생각하는 공간
+title:               생각하는 공간
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -13,7 +13,7 @@ url:                 https://traveler-ahn.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             Machine Learning Engineer
+tagline:             Data Analytics &<br>Computer Science Engineer
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
