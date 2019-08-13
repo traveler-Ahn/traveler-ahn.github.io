@@ -76,6 +76,14 @@ $ source flask/bin/activate
 
 ### 4. 실행!
 
+```
+# Web cam 실행 
+(flask) ~/flask_deeplearning/flask_deeplearning$ python3 app.py -i cam
+(flask) ~/flask_deeplearning/flask_deeplearning$ python3 app.py -i VIDEO_PATH  (Video file)
+
+and Web browser(Firefox & Chrome supported)
+http://localhost:5000
+```
 - [깃허브 연결](https://github.com/traveler-Ahn/flask_deeplearning)
 
 
