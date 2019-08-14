@@ -1,6 +1,6 @@
 
 ## Github Blog
-- [https://traveler-Ahn.github.io](https://traveler-Ahn.github.io)
+- [https://traveler-ahn.github.io](https://traveler-ahn.github.io)
 - 이 블로그는 [박민](https://github.com/isme2n/isme2n.github.io), [변성윤](https://zzsza.github.io)님 블로그 테마를 기반으로 제작되었습니다
 	- 변성윤님 테마 대비 다른 점은 아직 없습니다:)
 - 본 테마를 사용하고 싶으신 경우, 자유롭게 사용 해주세요. 인터넷의 지식은 모든 사람에게 자유롭게 공유되어야 한다고 생각합니다.:)
