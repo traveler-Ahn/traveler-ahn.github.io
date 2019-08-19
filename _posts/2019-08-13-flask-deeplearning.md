@@ -73,6 +73,10 @@ $ cd flask_deeplearning
 
 - 해당 [경로](https://drive.google.com/drive/folders/1vBnoOsVKDmy55-6Ky9CtEwrr3SYkD7pJ)에서 모델 파일을 다운받아서 models폴더 안에 넣어줍니다.
 
+#### 폴더 구조
+
+![folder structure](https://drive.google.com/uc?id=199CbYk5OSX7EauQ3xmwdcq37mBk_VLXQ)
+
 ### 4. 실행!
 
 ```
@@ -86,4 +90,8 @@ http://localhost:5000
 - [깃허브](https://github.com/traveler-Ahn/flask_deeplearning)에서 구현된 결과와 코드를 확인하세요:)
 
 
+
+#### 실행화면
+
+![flask_deeplearning](https://drive.google.com/uc?id=1DtxaXLNegsa2ebxTpqPT6wqYXs1wTata)
 
