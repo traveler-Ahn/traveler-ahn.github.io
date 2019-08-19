@@ -250,6 +250,18 @@ $ sudo gem install jekyll bundler
 $ sudo apt install tree
 ```
 
+#### 16. Ubuntu sticker note 설치
+
+```
+$ sudo add-apt-repository ppa:umang/indicator-stickynotes
+$ sudo apt-get update
+$ sudo apt-get install indicator-stickynotes
+```
+
+![stickynote](https://drive.google.com/uc?id=1wzAse6hoygpzSy1OJOhibWcKTEbnpKI1)
+
+Ref from [here](https://itsfoss.com/indicator-stickynotes-windows-like-sticky-note-app-for-ubuntu/)
+
 ---
 
 #### [Trouble shooting]
