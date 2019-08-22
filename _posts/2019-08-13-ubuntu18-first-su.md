@@ -9,13 +9,13 @@ comments: true
 ---
 
 - 오늘 3시간 가량 우분투를 포멧하고 다시 설치하면서 삽질했던 기록들을 남깁니다.
-- 앞으로 계속 업데이트 될 페이지 입니다. (190813)
+- 앞으로 계속 업데이트 될 페이지 입니다. (190819)
 
 
 
 ---
 
-# Ubuntu 18.04 내 컴퓨터 초기 s/u (190813)
+# Ubuntu 18.04 내 컴퓨터 초기 s/u (190819)
 
 - 이 모든 것들은 포멧을 반복하는 불쌍한 나 같은 사람들을 위한 recipe?
   - 우분투 초기 필수 프로그램
@@ -250,7 +250,7 @@ $ sudo gem install jekyll bundler
 $ sudo apt install tree
 ```
 
-#### 16. Ubuntu sticker note 설치 (Ref from [here](https://itsfoss.com/indicator-stickynotes-windows-like-sticky-note-app-for-ubuntu/))
+### 16. Ubuntu sticker note 설치 (Ref from [here](https://itsfoss.com/indicator-stickynotes-windows-like-sticky-note-app-for-ubuntu/))
 
 ```
 $ sudo add-apt-repository ppa:umang/indicator-stickynotes
@@ -260,7 +260,13 @@ $ sudo apt-get install indicator-stickynotes
 
 ![stickynote](https://drive.google.com/uc?id=1wzAse6hoygpzSy1OJOhibWcKTEbnpKI1)
 
+### 17. sqlite3
 
+- 웹 프로그래밍 테스트 용으로 많이 쓰인다.
+
+```
+$ sudo apt install sqlite3
+```
 
 ---
 
