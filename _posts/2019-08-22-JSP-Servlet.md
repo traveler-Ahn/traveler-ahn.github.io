@@ -16,18 +16,20 @@ comments: true
 
 [실전 JSP](https://www.inflearn.com/course/실전-jsp_renew)
 
+updated 190829
+
 ### 1강 웹 프로그램 개요
 
 > 웹 프로그램의 개요와 동작에 대해서 학습한다.
 
-- 1-1 웹 프로그래밍이란?
+- **<span style="color:#FF0033">1-1 웹 프로그래밍이란?</span>**
   - 웹 프로그램이란, 인터넷 서비스를 이용해서 서로 다른 구성요소들(PC등)이 통신할 수 있는 프로그램이다.
-- 1-2 프로토콜(Protocol)과 IP
+- **<span style="color:#FF0033">1-2 프로토콜(Protocol)과 IP</span>**
   - 프로토콜: 통신을 하기위한 규약으로 HTTP, FTP, SMTP, POP 등이 있다.
 
 ![webprogramming1](https://drive.google.com/uc?id=120epycf3bAp4iM-dnv_Ca5x4IJnOLBhc)
 
-- 1-3 웹 프로그래밍의 동작 원리
+- **<span style="color:#FF0033">1-3 웹 프로그래밍의 동작 원리</span>**
 
 ![webprogramming2](https://drive.google.com/uc?id=14wXGLsBOEIX1wJpPViv829qbl3pVf-jg)
 
@@ -78,10 +80,10 @@ Gateway addr, Router addr: 공유기의 IP
 
 > 웹 프로그램 개발을 위한 기본 개발 환경 설정 방법에 대해 학습한다.
 
-- 2-1 JDK 설치
-- 2-2 Path 설정
-- 2-3 이클립스 다운로드
-- 2-4 웹 컨테이너 (Apache Tomcat 8.5) 설치
+- **<span style="color:#FF0033">2-1 JDK 설치</span>**
+- **<span style="color:#FF0033">2-2 Path 설정</span>**
+- **<span style="color:#FF0033">2-3 이클립스 다운로드</span>**
+- **<span style="color:#FF0033">2-4 웹 컨테이너 (Apache Tomcat 8.5) 설치</span>**
 
 
 
@@ -93,18 +95,20 @@ Gateway addr, Router addr: 공유기의 IP
 
 > JSP 파일을 간단하게 만들어 보고, 실제로 웹 컨테이너에서 어떤 작업이 이루어지는지 학습한다.
 
-- 3-1 웹 컨테이너 구조
+- **<span style="color:#FF0033">3-1 웹 컨테이너 구조</span>**
+  - `개발자는 jsp 파일 만드는 일` 까지만 진행하고, 이렇게 만든 jsp 파일은
+  - WAS에 내장되어있는 `웹 컨테이너에서 .java 파일 -> .class 파일로 컴파일`이 되고
+  - 클래스 파일은 `링크 작업을 위해.obj파일까지 만들어`준다.
+  - 이렇게 만들어진 파일은 `JVM에 의해서 실행이되고 사용자에게 html 파일로 응답`이 된다.
 
 ![webcontainer](https://drive.google.com/uc?id=1aDuEbxIxc0YRwzaKXRUBonyq3tsSE0Pz)
 
-> 개발자는 jsp 파일 만드는 일 까지만 진행하고, 웹 컨테이너(WAS에 내장되어있다.)에서 .java 파일 -> .class 파일 (컴파일) -> .obj파일 (링크) 까지 만들어준다.
-
-- 3-2 JSP 파일 작성
-- 3-3 .java 파일 확인
+- **<span style="color:#FF0033">3-2 JSP 파일 작성</span>**
+  - jsp 파일 작성은 `기존 html 파일에 jsp 문법으로 내용을 추가한 후 확장자를 .jsp`로 만들어준다.
+- **<span style="color:#FF0033">3-3 .java 파일 확인</span>**
+  - jsp 파일은 기존 html 파일에 jsp 코드를 가미해서 (이를 통해서 사용자의 요청에 대해 반응하는 동적인 활동이 가능해진다) 만들게 되고, 이를 웹 컨테이너가 컴파일 및 링킹 과정을 통해 사용자의 요청에 응답할 수 있는 html 파일로 response해주게 된다.
 
 ![javafile](https://drive.google.com/uc?id=1ytKlSJG2XA7lkx2Sd6zMxy5L_5i69k9g)
-
-- jsp 파일은 기존 html 파일에 jsp 코드를 가미해서 (이를 통해서 사용자의 요청에 대해 반응하는 동적인 활동이 가능해진다) 만들게 되고, 이를 웹 컨테이너가 컴파일 및 링킹 과정을 통해 사용자의 요청에 응답할 수 있는 html 파일로 response해주게 된다.
 
 
 
@@ -118,14 +122,13 @@ Gateway addr, Router addr: 공유기의 IP
 
 ​       **jsp는 html 코드안에 jsp코드를 넣는 반면에, Servlet은 순수 java 파일로 구성된다.**
 
-- 4-1 웹 컨테이너 구조
+- **<span style="color:#FF0033">4-1 웹 컨테이너 구조</span>**
+  - 개발자는 java 파일만 만들고, 웹 컨테이너가 컴파일 및 링킹 과정을 진행한다.
 
 ![Servlet web container](https://drive.google.com/uc?id=1rGIgeMsCah3E4ben5eseELfFOo7PH7H2)
 
-> 개발자는 java 파일만 만들고, 웹 컨테이너가 컴파일 및 링킹 과정을 진행한다.
-
-- 4-2 Servlet 파일 작성
-- 4-3 .class 파일 확인
+- **<span style="color:#FF0033">4-2 Servlet 파일 작성</span>**
+- **<span style="color:#FF0033">4-3 .class 파일 확인</span>**
 
 ![classfile](https://drive.google.com/uc?id=1RCq1sYdui3OC2blpOLXT5hLieuI8Gmoi)
 
@@ -133,23 +136,19 @@ Gateway addr, Router addr: 공유기의 IP
 
 ------
 
-### jsp? Servlet?
+### Jsp? Servlet?
 
-```
-jsp는 html 기반에 jsp 코드를 넣어서 만든 서버사이드(server side) 파일이고, 이 파일을 웹 컨테이너가 java파일로 만들고, 컴파일 및 링킹 과정을 통해 웹 프로그램으로 사용자에게 서비스 된다.
-
-Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server side) 파일을 웹컨테이너가 컴파일 및 링킹 과정을 진행하고, 웹 프로그램으로 사용자에게 서비스 된다.
-
-결국 두 과정의 목적은 사용자에게 java라는 언어를 통해 동적인 환경을 제공하고자 한다는 것이다.
-```
+- **jsp는** html 기반에 jsp 코드를 넣어서 만든 서버사이드(server side) 파일이고, 이 파일을 웹 컨테이너가 java파일로 만들고, 컴파일 및 링킹 과정을 통해 웹 프로그램으로 사용자에게 서비스 된다.
+- **Servlet은** 순수 java 코드로 구성되고, 이러한 서버사이드(server side) 파일을 웹컨테이너가 컴파일 및 링킹 과정을 진행하고, 웹 프로그램으로 사용자에게 서비스 된다.
+- 결국 두 과정의 목적은 웹환경에서 사용자에게 java라는 언어를 통해 동적인 환경을 제공하고자 한다는 것이다.
 
 
 
 > 주로 jsp와 Servlet은 동시에 사용해서 웹 프로그램을 구현하는데, 
 >
-> jsp는 주로 view function을 위해서 스크립트를 구현하고,
+> **jsp**는 주로 view function을 위해서 스크립트를 구현하고,
 >
-> Servlet은 실질적인 동작(Controller, Model)을 위해서 구현되곤 한다.
+> **Servlet**은 실질적인 동작(Controller, Model)을 위해서 구현되곤 한다.
 
 
 
@@ -161,22 +160,23 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > Servlet을 외부에서 요청하기 쉽도록 특정 문자를 이용해서 맵핑하는 방법에 대해서 학습한다.
 
-- 5-1 Servlet 맵핑이란?
+- **<span style="color:#FF0033">5-1 Servlet 맵핑이란?</span>**
+
+  **Servlet mapping ?** `각 서블릿마다 구분할 수 있는 간결한 URL 별칭을 지어주는 과정`
+
+  ​	1. web.xml을 이용하는 방법
+
+  ​	2. Java annotation을 이용하는 방법
 
 ![SM1](https://drive.google.com/uc?id=1Hn01VkYTLH2ikLN3sa_uDALLNbA4vfAh)
 
-**Servlet mapping ?** `각 서블릿마다 구분할 수 있는 간결한 별칭을 지어주는 과정`
-
-1. web.xml을 이용하는 방법
-2. Java annotation을 이용하는 방법
 
 
-
-- 5-2 web.xml 파일을 이용한 맵핑 (상대적으로 고전적인 방법)
+- **<span style="color:#FF0033">5-2 web.xml 파일을 이용한 맵핑</span>**
 
 ![SM2](https://drive.google.com/uc?id=1aqwW6F09gza5I00XHjjJUg71dXmaQ4V1)
 
-- 5-3 Java Annotation을 이용한 맵핑 (상대적으로 최신방법)
+- **<span style="color:#FF0033">5-3 Java Annotation을 이용한 맵핑</span>**
 
 ![SM3](https://drive.google.com/uc?id=1KTWWs4-aiPTH5CRP-Ij8QYrBIPcqr4e4)
 
@@ -190,16 +190,32 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > 사용자의 요청(Request)과 web-server의 응답(response)을 담당하는 객체에 대해서 학습한다.
 
-- 6-1 HttpServlet
+- **<span style="color:#FF0033">6-1 HttpServlet (abstract class)</span>**
 
-![httpServlet](https://drive.google.com/uc?id=1F1lwne9xYKANJ79glJmokzHTm1VQPxYZ)
+  - `Web server를 구현하기 위해서 HttpServlet을 상속받아서 필요한 기능을 구현해준다.`
+  - HttpServlet의 코드 구현을 살펴보면 GenericServlet을 상속받는 것을 확인할 수 있다.
 
-`HttpServlet만 상속받아서 필요한 기능만 구현해준다.`
+  ![httpServlet](https://drive.google.com/uc?id=1F1lwne9xYKANJ79glJmokzHTm1VQPxYZ)
 
-- 6-2 HttpServletRequest
+  <img src="https://drive.google.com/uc?id=14zeNXZ7FzeiUhsiT44MSQEQH-1pdRDLC">
+
+  
+
+- **<span style="color:#FF0033">6-2 HttpServletRequest</span>**
+  
   - Client에 의한 요청 객체
-- 6-3 HttpServletResponse
+  - request객체를 이용해서 사용자가 요청한 정보(혹은 사용자 정보)를 받아올 수 있다.
+  - Ex.) request.getParameter(); 메소드를 통해서 사용자가 보내는 정보를 이용할 수 있다.
+  
+  <img src="https://drive.google.com/uc?id=1UESMG1aSxj1t1crd4FuIM1smB29AkHGg">
+
+- **<span style="color:#FF0033">6-3 HttpServletResponse</span>**
+  
   - Server에 의한 응답객체
+  - response객체를 통해서 사용자에게 정보를 응답 해줄 수 있다.
+  - Ex.) response.getWriter(); 메소드를 통해서 서버가 데이터를 전송(응답)할 수 있다.
+  
+  <img src="https://drive.google.com/uc?id=1c2yZtqi8nAlShX4tbt37Ij4fIrE7d5dK">
 
 
 
@@ -211,15 +227,20 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > 사용자의 요청에 의해서 생성된 servlet의 생명주기 (생성, 실행, 종료)
 
-- 7-1 Servlet의 생명주기
+- **<span style="color:#FF0033">7-1 Servlet의 생명주기</span>**
+
+  - 서블릿이 생성(init())되고, 서비스를 실행(service)하고, 서블릿이 종료(destroy())된다.
+
+  - @PostConstruct / @PreDestroy 어노테이션을 사용해서 서블릿이 생성 이전/후에 콜백 메소드를 제공하여 
+
+    사용자가 원하는 작업을 할 수 있다.
 
 ![ServletLC](https://drive.google.com/uc?id=1UIEWe_6rah8KE858a37CP45mgueDetmT)
 
-- 7-2 Servlet의 생명주기 관련 메소드
+- **<span style="color:#FF0033">7-2 Servlet의 생명주기 관련 메소드</span>**
+  - 각 단계 별 콜백 메소드를 제공 및 호출(웹 컨테이너가 호출함)됨으로써 Servlet의 Life-Cycle을 구현한다.
 
 ![ServletLC_method](https://drive.google.com/uc?id=1KUNVMT4oltnOMXZR_9rWqdvUNRvucv4j)
-
-> 각 단계 별 콜백 메소드를 제공 및 호출(웹 컨테이너가 호출함)됨으로써 Servlet의 Life-Cycle을 구현한다.
 
 
 
@@ -231,21 +252,74 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > 사용자의 form 데이터를 Servlet에서 처리하는 방법에 대해서 학습한다.
 
-- 8-1 form 태그
+- **<span style="color:#FF0033">8-1 form 태그</span>**
 
 ![form](https://drive.google.com/uc?id=1dxs2qWKkJnejA01ODnWe8bRCaBjRnvp9)
 
-- 8-2 doGet
+- **<span style="color:#FF0033">8-2 doGet</span>**
+  - 데이터가 웹 브라우저 URL에 노출되어 웹 서버로 전송된다. 
 
 ![formGet](https://drive.google.com/uc?id=1l4JPSIIQBWFH9Tnv6ONWkUny856kSYvA)
 
-> 데이터가 웹 브라우저 URL에 노출되어 웹 서버로 전송된다. 
-
-- 8-3 doPost
+- **<span style="color:#FF0033">8-3 doPost</span>**
+  - 데이터가 HTTP Request에 암호화 되어 웹서버로 전송되기 때문에 상대적으로 보안에 강하다
 
 ![formPost](https://drive.google.com/uc?id=1j1l4CRGgUy89QkOFA_hcNfLEFl97pmKC)
 
-> 데이터가 HTTP Request에 암호화 되어 웹서버로 전송되기 때문에 상대적으로 보안에 강하다
+---
+
+
+
+### [8강 구현 코드]
+
+```java
+package com.servlet;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Enumeration;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/mSignUp")
+public class MemSignUp extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println(" -- doGet() -- ");
+		
+		String m_name = request.getParameter("m_name");
+		String m_pass = request.getParameter("m_pass");
+		String m_gender = request.getParameter("m_gender");
+		String[] m_hobbys = request.getParameterValues("m_hobby");
+		String m_residence = request.getParameter("m_residence");
+		
+		System.out.println("m_name : " + m_name);
+		System.out.println("m_pass : " + m_pass);
+		System.out.println("m_gender : " + m_gender);
+		System.out.println("m_hobbys : " + Arrays.toString(m_hobbys));
+		System.out.println("m_residence : " + m_residence);
+		
+		Enumeration<String> names = request.getParameterNames();
+		while (names.hasMoreElements()) {
+			String name = (String) names.nextElement();
+			System.out.println("name : " + name);
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println(" -- doPost() -- ");
+		doGet(request, response);
+	}
+}
+```
+
+
 
 
 
@@ -257,18 +331,27 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > html 파일에 java 관련 코드를 삽입하여 jsp 파일을 만드는 방법에 대해서 학습한다.
 
-- 9-1 Servelet vs. JSP
+- **<span style="color:#FF0033">9-1 Servelet vs. JSP</span>**
 
 ![servlet_jsp](https://drive.google.com/uc?id=1urospyR_amaSSe8T-s00qdpixRXOTmdt)
 
-- 9-2 JSP 파일 HTML5 포멧 설정
-- 9-3 JSP 주요 스크립트
+- **<span style="color:#FF0033">9-2 JSP 파일 HTML5 포멧 설정</span>**
+
+<img src="https://drive.google.com/uc?id=1pSHYs3ATbavOCWAax6F0A903BjZKkCu6">
+
+- **<span style="color:#FF0033">9-3 JSP 주요 스크립트</span>**
 
 ![servlet_jsp_script1](https://drive.google.com/uc?id=1KxL4bN3Qj_cBG7mbwmg9Ce-h7bCVB4El)
 
 ![servlet_jsp_script2](https://drive.google.com/uc?id=1QxVtnVOcEAMOyMEpmoDIzFd8WhpU-BbV)
 
 ![servlet_jsp_script3](https://drive.google.com/uc?id=1Tku8BIon-kBWi0iG3uh3beZjAlfviDKJ)
+
+​          4) page import : Java에서 필요한 라이브러리 필요시 사용될 수 있다. (ex. ArrayList<>)
+
+```jsp
+   <%@ page import="~~~" %>
+```
 
 
 
@@ -280,11 +363,13 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > 사용자의 요청(Request)과 web-server의 응답(response)을 담당하는 객체에 대해서 학습한다.
 
-- 10-1 request 객체
+- **<span style="color:#FF0033">10-1 request 객체</span>**
+  - 사용자에 의해서 들어온 요청데이터(request)를 웹서버에서 jsp파일로 뿌려주는 일(request.getParameter())을 할 수 있다.
 
 ![request](https://drive.google.com/uc?id=1QcpcVdPKL-8qfEBlOY7pYiIqKLgZyW_d)
 
-- 10-2 response 객체
+- **<span style="color:#FF0033">10-2 response 객체</span>**
+  - 구동중인 서버의 현재  jsp파일에서 사용자에게 (혹은 다른 경로에게) 응답을 해주는 일을 할 수 있다.
 
 ![response](https://drive.google.com/uc?id=1QF1ARM71UmpzmjIpq9A0duMmM5XdLyer)
 
@@ -296,12 +381,190 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 ### 11강 JSP 내장객체
 
-> request, responsedhl JSP 에서 기본적으로 제공하는 객체에 대해서 학습한다.
+> request, response의 JSP 에서 기본적으로 제공하는 객체에 대해서 학습한다.
 
-- 11-1 config 객체
-- 11-2 application 객체
-- 11-3 out 객체
-- 11-4 exception 객체
+- **<span style="color:#FF0033">11-1 config 객체</span>**
+  - 하나의 서블릿에서 데이터를 공유하게 해주는 방법 제공
+  - web.xml파일에 init-param 태그를 이용해서 데이터를 기입하고, jsp 파일에서 해당 데이터를 가져다 쓸 수 있다.
+
+<img src="https://drive.google.com/uc?id=1lnBDB9AhuBtn6r34ONOXCKhHs3tgAmFW">
+
+
+
+```xml
+<!-- web.xml 파일 -->
+<!-- 해당 jsp파일이 웹컨테이너에 의해 자동으로 Servlet으로 변환되긴 하지만, -->
+<!-- web.xml에서 초기 파라미터(init-param)를 기입하기 위해 Servlet에 등록을 해주게 된다. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>testPjt11</display-name>
+  
+  <servlet>
+    <servlet-name>servletEx</servlet-name>
+    <jsp-file>/jspEx.jsp</jsp-file>
+    <init-param>
+    	<param-name>adminId</param-name>
+    	<param-value>admin</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>adminPw</param-name>
+    	<param-value>1234</param-value>
+    </init-param>	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>servletEx</servlet-name>
+  	<url-pattern>/jspEx.jsp</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+```
+
+
+
+```jsp
+<!-- 선언된 초기 파라미터를 jsp 내장객체를 이용해서 사용하는 과정 -->
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		
+		<%!
+		String adminId;
+		String adminPw;
+		%>
+		
+		<%
+		adminId = config.getInitParameter("adminId");
+		adminPw = config.getInitParameter("adminPw");
+		%>
+		
+		<p>adminId : <%= adminId %></p>
+		<p>adminPw : <%= adminPw %></p>
+		
+	</body>
+</html>
+```
+
+
+
+- **<span style="color:#FF0033">11-2 application 객체</span>**
+  - 하나의 jsp(Servlet)이 아닌 여러 jsp(application)간 데이터를 공유하게 해주는 방법 제공
+
+<img src="https://drive.google.com/uc?id=1MTC0F-0tjomppYoIGeN_EewcpLspeb8S">
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>testPjt11</display-name>
+  
+  <context-param>
+  	<param-name>imgDir</param-name>
+  	<param-value>/upload/img</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>testServerIP</param-name>
+  	<param-value>127.0.0.1</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>realServerIP</param-name>
+  	<param-value>192.168.0.1</param-value>  	
+  </context-param>
+  
+</web-app>
+```
+
+
+
+```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		
+		<%!
+		String imgDir;
+		String testServerIp;
+		String realServerIp;
+		%>
+		
+		<%
+		imgDir = application.getInitParameter("imgDir");
+		testServerIp = application.getInitParameter("testServerIP"); 
+		realServerIp = application.getInitParameter("realServerIP");
+		%>
+		
+		<p>imgDir : <%= imgDir %></p>
+		<p>testServerIP : <%= testServerIp %></p>
+		<p>realServerIP : <%= realServerIp %></p>
+		
+	</body>
+</html>
+```
+
+
+
+<img src="https://drive.google.com/uc?id=14zKWB66DNtL1mLVRYbteBAWCG7E70eh-">
+
+
+
+```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		
+		<%!
+		String imgDir;
+		String testServerIp;
+		String realServerIp;
+		%>
+		
+		<%
+		application.setAttribute("imgDir", "/upload/img");
+		application.setAttribute("testServerIP", "localhost"); 
+		application.setAttribute("realServerIP", "192.168.0.1");
+		%>
+		
+		<%
+		imgDir = (String)application.getAttribute("imgDir");
+		testServerIp = (String)application.getAttribute("testServerIP"); 
+		realServerIp = (String)application.getAttribute("realServerIP");
+		%>
+		
+		<p>imgDir : <%= imgDir %></p>
+		<p>testServerIP : <%= testServerIp %></p>
+		<p>realServerIP : <%= realServerIp %></p>
+		
+	</body>
+</html>
+```
+
+
+
+- **<span style="color:#FF0033">11-3 out 객체</span>**
+
+<img src="https://drive.google.com/uc?id=1q9x57kzEZ5DN2UBsvm_ORv0ZSCk1CLrJ">
+
+- **<span style="color:#FF0033">11-4 exception 객체</span>**
+
+<img src="https://drive.google.com/uc?id=1AdzHvK2cJJhzfb80HSn4LydnVPRGdEy9">
 
 
 
@@ -313,9 +576,106 @@ Servlet은 순수 java 코드로 구성되고, 이러한 서버사이드(server 
 
 > Servlet에서 데이터를 공유하는 방법에 대해서 학습한다.
 
-- 12-1 servlet parameter
-- 12-2 context parameter
-- 12-3 context attribute
+> jsp에서 쓰인 코드와 동일하다
+
+- **<span style="color:#FF0033">12-1 servlet parameter</span>**
+  - 하나의 서블릿 파일 내에서 데이터 공유되는 방법
+
+```xml
+<!-- xml파일 -->
+
+<!-- web.xml 파일 -->
+<!-- 해당 jsp파일이 웹컨테이너에 의해 자동으로 Servlet으로 변환되긴 하지만, -->
+<!-- web.xml에서 초기 파라미터(init-param)를 기입하기 위해 Servlet에 등록을 해주게 된다. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>testPjt11</display-name>
+  
+  <servlet>
+    <servlet-name>servletEx</servlet-name>
+    <servlet-class>해당servlet class full path</servlet-class>
+    <init-param>
+    	<param-name>adminId</param-name>
+    	<param-value>admin</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>adminPw</param-name>
+    	<param-value>1234</param-value>
+    </init-param>	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>servletEx</servlet-name>
+  	<url-pattern>/url-path</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+```
+
+```java
+String adminId;
+String adminPw;
+
+adminId = config.getInitParameter("adminId");
+adminPw = config.getInitParameter("adminPw");
+```
+
+
+
+- **<span style="color:#FF0033">12-2 context parameter</span>**
+  - 어플리케이션 간 (여러 Servlet 파일간) 데이터가 공유되는 방법
+
+```xml
+<!-- xml 파일 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>testPjt11</display-name>
+  
+  <context-param>
+  	<param-name>imgDir</param-name>
+  	<param-value>/upload/img</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>testServerIP</param-name>
+  	<param-value>127.0.0.1</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>realServerIP</param-name>
+  	<param-value>192.168.0.1</param-value>  	
+  </context-param>
+  
+</web-app>
+```
+
+```java
+String imgDir;
+String testServerIp;
+String realServerIp;
+
+imgDir = application.getInitParameter("imgDir");
+testServerIp = application.getInitParameter("testServerIP"); 
+realServerIp = application.getInitParameter("realServerIP");
+```
+
+
+
+- **<span style="color:#FF0033">12-3 context attribute</span>**
+  - application 객체간 공유를 위해서 context에 속성을 등록하고 이를 공유하게 된다.
+
+```java
+String imgDir;
+String testServerIp;
+String realServerIp;
+
+application.setAttribute("imgDir", "/upload/img");
+application.setAttribute("testServerIP", "localhost"); 
+application.setAttribute("realServerIP", "192.168.0.1");
+
+imgDir = (String)application.getAttribute("imgDir");
+testServerIp = (String)application.getAttribute("testServerIP"); 
+realServerIp = (String)application.getAttribute("realServerIP");
+```
 
 
 
