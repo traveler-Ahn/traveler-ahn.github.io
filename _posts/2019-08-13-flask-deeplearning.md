@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/13 플라스크(flask) 딥러닝 서버, 얼굴인식(Face Recognition)/물체인식(Object detection)"
 subtitle: "2019/08/13 플라스크(flask) 딥러닝 서버, 얼굴인식(Face Recognition)/물체인식(Object detection)"
-categories: til
-tags: til
+categories: deeplearning
+tags: project
 comments: true
 ---
 

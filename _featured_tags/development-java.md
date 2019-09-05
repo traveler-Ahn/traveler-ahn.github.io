@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Kotlin
-slug: kotlin
+title: Java
+slug: java
 category: development
 menu: false
-order: 9
+order: 7
 ---

@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/13 Nginx+Gunicorn+Django 웹어플리케이션 서버 s/u"
 subtitle: "2019/08/13 Nginx+Gunicorn+Django 웹어플리케이션 서버 s/u "
-categories: til
-tags: til
+categories: development
+tags: django
 comments: true
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/17 python 예외처리"
 subtitle: "2019/08/17 python 예외처리"
-categories: til
-tags: til
+categories: development
+tags: python
 comments: true
 ---
 

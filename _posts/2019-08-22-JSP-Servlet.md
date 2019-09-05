@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/22 JSP-Servlet 인프런 강의"
 subtitle: "2019/08/22 JSP-Servlet 인프런 강의"
-categories: til
-tags: til
+categories: development
+tags: jspservlet
 comments: true
 ---
 

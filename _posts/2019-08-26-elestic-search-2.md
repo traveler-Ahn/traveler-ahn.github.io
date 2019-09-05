@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/26 ELK(ElasticSearch,Logstash,Kibana) 스택으로 데이터 분석하기 (2)"
 subtitle: "2019/08/26 ELK(ElasticSearch,Logstash,Kibana) 스택으로 데이터 분석하기 (2)"
-categories: til
-tags: til
+categories: development
+tags: elasticsearch
 comments: true
 
 ---

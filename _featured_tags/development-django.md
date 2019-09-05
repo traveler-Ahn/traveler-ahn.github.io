@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Kubernetes
-slug: kubernetes
+title: Django
+slug: django
 category: development
 menu: false
-order: 7
+order: 2
 ---

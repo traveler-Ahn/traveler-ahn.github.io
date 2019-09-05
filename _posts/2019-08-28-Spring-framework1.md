@@ -2,8 +2,8 @@
 layout: post
 title:  "2019/08/28 스프링 프레임워크 (인프런 강좌 정리)"
 subtitle: "2019/08/28 스프링 프레임워크 (인프런 강좌 정리)"
-categories: til
-tags: til
+categories: development
+tags: spring
 comments: true
 ---
 
@@ -865,7 +865,7 @@ public class MemberConfig {
 
     - **방법3** `어노테이션을 활용`하여 자동으로 빈(Bean) 객체에 담고, 이러한 빈 객체를 이용한다.
 
-      #####        객체를 주입하는 쪽 클래스에서,
+      #####        객체를 주입하는 쪽 클래스에서, (`빈 객체로 올린다는 것!(메모리 로딩)`)
 
       1. `@Repository어노테이션`을 이용하거나, 
 
