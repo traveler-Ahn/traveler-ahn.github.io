@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Kaggle
-slug: kaggle
-category: data
+title: PGM
+slug: PGM
+category: Mathematics
 menu: false
 order: 3
 ---

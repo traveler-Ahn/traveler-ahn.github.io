@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Deep-Learning
-slug: dl
-category: data
+title: Movie
+slug: Movie
+category: Life
 menu: false
 order: 2
 ---

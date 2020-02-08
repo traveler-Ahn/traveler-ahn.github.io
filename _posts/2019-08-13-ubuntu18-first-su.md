@@ -2,14 +2,13 @@
 layout: post
 title:  "2019/08/13 Ubuntu 18.04 내컴퓨터 초기 s/u"
 subtitle: "2019/08/13 Ubuntu 18.04 내컴퓨터 초기 s/u"
-categories: til
-tags: til
+categories: Etc
+tags: Etc
 comments: true
 
 ---
 
-- 오늘 3시간 가량 우분투를 포멧하고 다시 설치하면서 삽질했던 기록들을 남깁니다.
-- 앞으로 계속 업데이트 될 페이지 입니다. (190819)
+- 3시간 가량 우분투를 포맷하고 다시 설치하면서 삽질했던 내용기록
 
 
 
@@ -23,12 +22,6 @@ comments: true
   - 가상환경(virtualenv) Tensorflow gpu (1.14.0 with CUDA/cuDNN)
   - Pycharm IDE
   - 지킬(jykell) 깃허브 홈페이지 관리를 위한 환경 s/u (Ruby & RubyGem)
-
----
-
-- 설치 순서는 제가 편한 순서입니다...ㅎㅎ
-- 간단한건 기록하지만 다른 곳에서 얻은 것들은 웬만하면 링크를 그대로 걸어두었습니다.
-- 혹시나, 문제 생기면 언제든 답글 남겨주세요. 미리 감사합니다 :)
 
 ---
 
@@ -46,17 +39,17 @@ $ apt-get install zip unzip
 
 ### 3. 우분투 한글입력 (Eng. 설치)
 
-- [링크]([https://gabii.tistory.com/entry/Ubuntu-1804-LTS-%ED%95%9C%EA%B8%80-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%A4%EC%A0%95](https://gabii.tistory.com/entry/Ubuntu-1804-LTS-한글-설치-및-설정)) 사이트에 잘 나와있습니다 :) 감사함당
+- [링크](https://gabii.tistory.com/entry/Ubuntu-1804-LTS-한글-설치-및-설정) 참조
 
 ### 4. 크롬 설치
 
-- [링크](https://webnautes.tistory.com/1184) 사이트에 잘 나와있습니다 :) 감사함당
+- [링크](https://webnautes.tistory.com/1184) 참조
 
 ### 5. 저장소 업데이트, 그놈 [트윅](https://wnw1005.tistory.com/44) 설치
 
 ```
 $ sudo apt update
-$ sudo apt-get install gnome-tweak-tool
+$ sudo apt install gnome-tweak-tool
 ```
 
 ### 6. pip & python3 설치
@@ -81,7 +74,7 @@ $ pip3 --version               # 설치 버전 확인
 
 #### [NVIDIA 그래픽 드라이버 설치]
 
-- GUI 상에서 설치가 간단하기 됩니다 :) ([ref](https://eungbean.github.io/2018/08/08/Ubuntu-Installation1/) 참조하였습니다.)
+- GUI 상에서 설치가 간단하기 됩니다 :) ([ref](https://eungbean.github.io/2018/08/08/Ubuntu-Installation1/) 참조)
 
 1. apt를 update 해주어야 합니다.
 
@@ -91,7 +84,7 @@ sudo apt-add-repository ppa:graphics-drivers/ppa -y
 sudo apt update
 ```
 
-2. 이후는 다음 [링크](https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04)참조하시면 정말 쉽게 설명되어있습니다. (영어가 어려워도.. 그냥 그림만 보면서 클릭만 하시면 됩니다 ㅎㅎ)
+2. 이후는 다음 [링크](https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04)참조
 
 #### [CUDA 드라이버 설치]
 
@@ -102,6 +95,8 @@ sudo apt update
 
 1. 해당 CUDA 버전에 맞는 cuDNN을 [다운](https://developer.nvidia.com/cuda-toolkit-archive) 받습니다.
 2. 이후의 설치는 해당 [링크](https://eungbean.github.io/2018/08/08/Ubuntu-Installation2-1/) 확인하시면 됩니다. 
+
+
 
 #### [Tensorflow gpu 설치]
 
@@ -148,6 +143,8 @@ $ cd tensorflow_gpu
 >>> device_lib.list_local_devices()
 ```
 
+
+
 ### 8. pycharm (python IDE) 설치
 
 1. pycharm 프로그램을 (free opensource community) [다운](https://www.jetbrains.com/pycharm/download/#section=linux) 받는다.
@@ -159,6 +156,8 @@ $ cd tensorflow_gpu
 ```
 
 3. 나머지는 대부분 Default로 설치하면 된다.
+
+
 
 ### 9. typora 설치 (마크다운 편집기)
 
@@ -180,6 +179,8 @@ $ sudo apt-get install typora
 $ sudo apt-get upgrade
 ```
 
+
+
 ### 10. FileZilla 설치
 
 - 편한 ftp 프로그램~
@@ -188,13 +189,19 @@ $ sudo apt-get upgrade
 $ sudo apt install filezilla
 ```
 
+
+
 ### 11. Teamviewer
 
 - 공식홈페이지에서 [다운](https://www.teamviewer.com/ko/download/linux/)받아서 설치하면 된다. (.deb 패키지 다운받아서 gui로 클릭만하면 설치 완료된다.)
 
+
+
 ### 12. Visualstudio Code
 
 - 공식홈페이지에서 [다운](https://code.visualstudio.com/docs/?dv=linux64_deb)받아서 설치하면 된다. (.deb 패키지 다운받아서 gui로 클릭만하면 설치 완료된다.)
+
+
 
 ### 13. git 설치
 
@@ -202,9 +209,11 @@ $ sudo apt install filezilla
 $ sudo apt install git
 ```
 
+
+
 ### 14. [지킬](https://jekyllrb-ko.github.io/)페이지 관리를 위한 [루비](https://www.ruby-lang.org/ko/documentation/installation/) 설치
 
-- 기존에 갖고있던 깃헙 페이지를 새로 싹 깨끗하게 민 데스크탑에 다운받아서 로컬에서 관리하기 위해 루비환경을 셋팅한다. (`시간 오래걸린다...ㅠㅠ`)
+- 기존에 갖고있던 깃헙 페이지를 새로 싹 깨끗하게 민 데스크탑에 다운받아서 로컬에서 관리하기 위해 루비환경을 셋팅한다. 
 
 ##### - 기존에 설치되어있는지 확인
 
@@ -268,21 +277,4 @@ $ sudo apt-get install indicator-stickynotes
 $ sudo apt install sqlite3
 ```
 
----
-
-#### [Trouble shooting]
-
-- 모르겠다... 나만 그런지 다들 그랬을지....
-
-```
-Could not find jekyll-sitemap-1.2.0 in any of the sources
-Run `bundle install` to install missing gems.
-```
-
-- 위와 같은 에러가 나올 때는 그냥 파일 설치를 계속했다...ㅎㅎㅎ 그러다 보니 되더라
-
-```
-$ sudo gem install jekyll-sitemap --version 1.2.0
-```
-
----
+#### 

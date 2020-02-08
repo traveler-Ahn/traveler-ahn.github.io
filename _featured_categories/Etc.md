@@ -1,10 +1,11 @@
 ---
 layout: list
-title: TIL
-slug: til
+title: Etc
+slug: Etc
 menu: true
 submenu: false
-order: 7
+order: 6
 description: >
-  오늘 내가 배운 것
+  Etc.
 ---
+

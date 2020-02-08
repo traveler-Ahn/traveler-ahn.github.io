@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               생각하는 공간
+title:               정리하는 공간
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -13,12 +13,12 @@ url:                 https://traveler-ahn.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             Data Analytics &<br>Computer Science Engineer
+tagline:             Do It Right Now
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  인생 다모작을 위한 평생 학습자입니다:)
+  인생 다모작 평생 학습자:)
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
