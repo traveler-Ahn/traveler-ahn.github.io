@@ -1,8 +1,9 @@
 
 ## Github Blog
 - [https://traveler-ahn.github.io](https://traveler-ahn.github.io)
-- 이 블로그는 [박민](https://github.com/isme2n/isme2n.github.io), [변성윤](https://zzsza.github.io)님 블로그 테마를 기반으로 제작되었습니다
-- 본 테마를 사용하고 싶으신 경우, 자유롭게 사용 해주세요. 인터넷의 지식은 모든 사람에게 자유롭게 공유되어야 한다고 생각합니다.:)
+- 이 블로그는 [변성윤](https://zzsza.github.io)님 블로그 테마를 기반으로 제작됨
+
+
 
 ### Structure
 - 다른 분들이 이 테마를 Fork할 경우, 사용할 수 있도록 블로그 구조에 대해 설명합니다
@@ -37,6 +38,8 @@
 - ```_config.yml```, ```_data```, ```_featured_categories```, ```_featured_tags```, ```about.md``` 내용 수정
 - ```favicon.ico```, ```tile-wide.png```, ```tile.png``` 원하는 이미지로 설정
 
+
+
 ### 로컬 빌드
 - Ruby가 설치되어 있어야 합니다
 - Ruby 설치는 [공식 문서](https://www.ruby-lang.org/ko/documentation/installation/) 참고
@@ -45,9 +48,15 @@
 bundle exec jekyll serve
 ```
 
+
+
 ### 원격 빌드
+
 - Github 저장소에 Push
+
+
 
 ### 글 작성
 - ```_featured_categories```, ```_featured_tags```에서 폴더를 설정한 후, ```_posts```에 글을 작성합니다
 - 글 제목 형태는 ```2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다
+
